@@ -22,10 +22,10 @@ export default function RootLayout({
   }
   return (
     <html lang="en">
-      <div>
+      <body>
       <Navbar onLogin={handleLogin} />
-      <main>{children}</main>
-    </div>
+        {children}
+        </body>
     </html>
   );
 }

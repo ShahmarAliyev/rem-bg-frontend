@@ -31,6 +31,8 @@ export default function Home() {
           }
         });
         console.log('Download URL:', response.data.downloadURL);
+        console.log(response.data);
+        
         setDownloadURL(response.data.downloadURL);
       } else {
         console.error('No file selected');
